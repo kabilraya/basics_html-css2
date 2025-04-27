@@ -1,12 +1,14 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .container {
   width: 825px;
   border: 5px solid black;
   margin: 50px auto;
+  /* /* display: flex; */
 }
 
 body {
@@ -31,16 +33,20 @@ header {
 }
 .price {
   font-size: 22px;
+  float: left;
 }
 .shipping-text {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: lighter;
-  margin-bottom: 18px;
+
+  float: right;
 }
 
 .info {
   margin-bottom: 14px;
+  clear: both;
+  /* width: 250px; */
 }
 
 /* .moreinfo {
@@ -104,13 +110,15 @@ h2::before {
 }
 .color-select {
   margin-top: 15px;
+  display: flex;
+  gap: 10px;
 }
 .first {
   background-color: black;
   width: 18px;
   height: 20px;
   display: inline-block;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .second {
@@ -118,7 +126,7 @@ h2::before {
   width: 20px;
   height: 20px;
   display: inline-block;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .third {
@@ -126,7 +134,7 @@ h2::before {
   width: 20px;
   height: 20px;
   display: inline-block;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .fourth {
@@ -134,7 +142,7 @@ h2::before {
   width: 20px;
   height: 20px;
   display: inline-block;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .fifth {
@@ -142,7 +150,7 @@ h2::before {
   width: 20px;
   height: 20px;
   display: inline-block;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .sixth {
@@ -150,5 +158,35 @@ h2::before {
   width: 20px;
   height: 20px;
   display: inline-block;
-  margin-right: 10px;
+  /* margin-right: 10px; */
+}
+
+.product-img {
+  /* float: left; */
+  /* margin-right: 40px; */
+}
+
+.price-details {
+  /* float: left; */
+  /* width: 240px; */
+  /* margin-right: 40px; */
+  padding-top: 20px;
+  flex: 1;
+  /* float: right; */
+}
+.detail-info {
+  flex: 1;
+  /* width: 240px; */
+  /* float: left; */
+}
+
+.flex-try {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  gap: 40px;
 }
